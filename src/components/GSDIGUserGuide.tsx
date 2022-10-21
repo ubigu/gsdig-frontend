@@ -1,5 +1,6 @@
 import React from 'react';
-import { Dialog, makeStyles, Typography } from '@material-ui/core';
+import { makeStyles, Dialog, AppBar, Toolbar, IconButton, Tabs, Tab, Typography, DialogContent } from '@material-ui/core';
+import { Close as CloseIcon } from '@material-ui/icons';
 import { useTranslations } from '@src/translation/TranslationContext';
 
 interface Props {
@@ -7,10 +8,9 @@ interface Props {
 }
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    margin: theme.spacing(1),
-    padding: theme.spacing(1),
-  }
+  tabContents: {
+    padding: theme.spacing(1)
+  },
 }));
 
 export default function GSDIGUserGuide({
@@ -19,20 +19,67 @@ export default function GSDIGUserGuide({
   const { tr } = useTranslations();
   const classes = useStyles();
 
+  const [currentTab, setCurrentTab] = React.useState(0);
+
+  const titles = [
+    tr.Common.mapControls,
+    tr.SideBar.layers,
+    tr.SideBar.arealdivision,
+    tr.SideBar.features,
+    tr.SideBar.unitdata,
+    tr.SideBar.join,
+    tr.SideBar.upload,
+  ];
+
+  const content = [
+    tr.UserGuide.map,
+    tr.UserGuide.layers,
+    tr.UserGuide.arealdivision,
+    tr.UserGuide.features,
+    tr.UserGuide.unitdata,
+    tr.UserGuide.join,
+    tr.UserGuide.upload,
+  ];
+
   return (
     <Dialog
-      fullWidth
+      fullScreen
       open
       onClose={onClose}
     >
-      <div className={classes.container}>
-        <Typography
-          variant='body1'
-          style={{ whiteSpace: "pre-line" }}
+      <AppBar position='sticky'>
+        <Toolbar>
+          <IconButton onClick={onClose}>
+            <CloseIcon />
+          </IconButton>
+          <Typography>{tr.Common.userGuide}</Typography>
+        </Toolbar>
+      </AppBar>
+      <DialogContent>
+        <Tabs
+          variant="scrollable"
+          value={currentTab}
+          onChange={(_, value) => setCurrentTab(value)}
         >
-          {tr.UserGuide.body}
-        </Typography>
-      </div>
+          {titles.map(title =>
+          <Tab
+            key={"userguide-tab-" + title}
+            label={title}
+          />
+          )}
+        </Tabs>
+        <div className={classes.tabContents}>
+          {currentTab === 0
+          ? <img src={content[currentTab]} />
+          : <Typography
+              variant='body1'
+              style={{ whiteSpace: "pre-line" }}
+            >
+              {content[currentTab]}
+            </Typography>
+          }
+        </div>
+      </DialogContent>
     </Dialog>
   )
 }
