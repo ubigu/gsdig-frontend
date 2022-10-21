@@ -1,0 +1,123 @@
+{
+  "SideBar": {
+    "gsdig": "GSDIG",
+    "layers": "Layers",
+    "arealdivision": "Areal divisions",
+    "unitdata": "Unit datasets",
+    "features": "Attribute table",
+    "upload": "Upload data",
+    "backgroundLayers": "Background layers",
+    "join": "Join data"    
+  },
+  "FeatureTable": {
+    "merge": "Merge selected features",
+    "unmerge": "Unmerge selected feature",
+    "noSelectedArealDivision": "No selected Areal division"
+  },
+  "Join": {
+    "create": "Join data into a new areal division",
+    "selectArealDivision": "Select areal division",
+    "selectUnitDataset": "Select unit dataset",
+    "additionalGroupBy": "Additional grouping attribute"
+  },
+  "Import": {
+    "fromFile": "Import file from device",
+    "formats": "Supported file formats: GeoPackage (.gpkg), GeoJSON (.json), ESRI Shapefile (.shp), CSV (.csv) or zip-file (.zip)",
+    "dropFile": "Select or drop a file",
+    "fromUrl": "Import file from URL",
+    "import": "Import",
+    "publish": "Publish as areal division or unit dataset",
+    "publishAsArealDivision": "Publish as areal division",
+    "publishAsUnitDataset": "Publish as unit dataset"
+  },
+  "Common": {
+    "uuid": "Unique identifier",
+    "title": "Title",
+    "type": "Type",
+    "options": "Options",
+    "description": "Description",
+    "organization": "Organization",
+    "publicity": "Is public",
+    "save": "Save",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "add": "Add",
+    "deleteConfirmation": "Are you sure you want to delete",
+    "downloadFile": "Download as a file",
+    "clone": "Create a copy",
+    "edit": "Edit",
+    "editTx": "Toggle editing",
+    "commitTx": "Save Layer Edits",
+    "delete": "Delete",
+    "extent": "Spatial extent",
+    "zoomToExtent": "Zoom to extent",
+    "url": "URL",
+    "username": "Username",
+    "password": "Password",
+    "unsavedEditsTitle": "Quit editing without saving?",
+    "unsavedEditsWillBeLost": "Unsaved modifications will be lost",
+    "help": "Help",
+    "about": "About",
+    "additionalFunctionality": "Additional functionality",
+    "validateGeometries": "Check for invalid geometries",
+    "invalidGeometries": "Invalid geometries",
+    "attributes": "Attributes",
+    "attribute": "Attribute",
+    "function": "Function",
+    "value": "Value",
+    "sensitivitySetting": "Data sensitivity settings"
+  },
+  "Zoom": {
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out"
+  },
+  "Workspace": {
+    "defaultTitle": "Default title"
+  },  
+  "WorkspaceDialog": {
+    "tooltip": "Select workspace",
+    "title": "Select workspace",
+    "searchPlaceholder": "Search by name",
+    "createNew": "Create new workspace",
+    "saveChanges": "Save current workspace state"
+  },
+  "BackgroundLayer": {
+    "defaultTitle": "New background layer"
+  },
+  "BackgroundLayerDialog": {
+    "tooltip": "Select background layer"
+  },
+  "LanguageSelectorControl": {
+    "tooltip": "Select language"
+  },
+  "StyleEditor": {
+    "tooltipEditOpen": "Open style editing",
+    "tooltipEditClose": "Close style editing",
+    "mapType": "Map type",
+    "basic": "Basic map",
+    "choropleth": "Choropleth map",
+    "drawFill": "Fill features",
+    "fillColor": "Fill color",
+    "property": "Classification property",
+    "classification": "Classification method",
+    "naturalBreaks": "Natural breaks",
+    "customBreaks": "Manual classification",
+    "numberOfClasses": "Number of classes",
+    "distribution": "Distribution",
+    "diverging": "Diverging",
+    "qualitative": "Qualitative",
+    "quantitative": "Quantitative",
+    "showNoValue": "Show features without value",
+    "noValueColor": "No value color",
+    "reverse": "Reverse colors",
+    "numberOfDecimals": "Number of decimals",
+    "legend": "Map Legend",
+    "noValue": "No value"
+  },
+  "InfoPage": {
+    "body": "The Geospatial Statistical Data Integration Service, GSDIG, will address frequent needs to integrate and aggregate spatially located unit data from different sources and with statistical background information.\n\nGSDIG is an indexing-based process to integrate statistical data from any domain in areal subdivisions; grids, standard or user modified geographies. It enables reusing location data of/for the original unit record data - usually buildings or cadastral parcels - and geographies from SDI using persistent identifiers (or address matching as extension) which provides an integrated geocoding system and data supply with further aggregation capabilities.\n\nA metadata-driven application for statistical data exploration will pilot the use of additional metadata concerning statistical and spatial data in automating and enhancing the user experience. The eventual goal is to elaborate a multilateral (multisource) geospatial-statistical ecosystem to increase the impact of geospatial and statistical information in decision making."
+  },
+  "UserGuide": {
+    "body": "Hello world"
+  }
+}

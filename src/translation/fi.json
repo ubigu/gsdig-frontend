@@ -1,0 +1,122 @@
+{
+  "SideBar": {
+    "layers": "Karttatasot",
+    "arealdivision": "Aluejaot",
+    "unitdata": "Yksikködata",
+    "features": "Kohdetaulukko",
+    "upload": "Tuo tiedostoja",
+    "backgroundLayers": "Taustakartat",
+    "join": "Yhdistä tietoa"
+  },
+  "FeatureTable": {
+    "merge": "Yhdistä kohteet",
+    "unmerge": "Pura yhdiste",
+    "noSelectedArealDivision": "Ei valittua aluejakoa. Valitse aluejako Aluejaot-välilehdeltä."
+  },
+  "Join": {
+    "create": "Yhdistä uudeksi aluejaoksi",
+    "selectArealDivision": "Valitse aluejako",
+    "selectUnitDataset": "Valitse yksikkotieto",
+    "additionalGroupBy": "Lisäryhmittelyominaisuus"
+  },
+  "Import": {
+    "fromFile": "Tuo tiedosto laitteelta",
+    "formats": "Tuetut tiedostoformaatit: GeoPackage (.gpkg), GeoJSON (.json), ESRI Shapefile (.shp), CSV (.csv) tai zip-tiedosto (.zip)",
+    "dropFile": "Valitse tai tiputa tiedosto",
+    "fromUrl": "Tuo tiedosto URL kautta",
+    "import": "Tuo",
+    "publish": "Julkaise aluejaoksi tai yksikködata aineistoksi",
+    "publishAsArealDivision": "Luo aluejako",
+    "publishAsUnitDataset": "Luo yksikködata aineisto"
+  },
+  "Common": {
+    "uuid": "Yksilöivä tunnus",
+    "title": "Nimi",
+    "type": "Tyyppi",
+    "options": "Asetukset",
+    "description": "Selite",
+    "organization": "Organisaatio",
+    "publicity": "Julkinen",
+    "save": "Tallenna",
+    "cancel": "Peruuta",
+    "yes": "Kyllä",
+    "add": "Lisää",
+    "deleteConfirmation": "Haluatko varmasti poistaa",
+    "downloadFile": "Lataa tiedosto",
+    "clone": "Luo kopio",
+    "edit": "Muokkaa",
+    "editTx": "Editointi päälle/pois",
+    "commitTx": "Tallenna tason muokkaukset",
+    "delete": "Poista",
+    "extent": "Geometrinen ulottuvuus",
+    "zoomToExtent": "Kohdista kartta laajuuteen",
+    "url": "URL",
+    "username": "Käyttäjätunnus",
+    "password": "Salasana",
+    "unsavedEditsTitle": "Lopetetaanko editointi tallentamatta?",
+    "unsavedEditsWillBeLost": "Tallentamattomat muutokset menetetään",
+    "help": "Ohje",
+    "about": "Tietoja",
+    "additionalFunctionality": "Lisätoiminnot",
+    "validateGeometries": "Tarkista geometria virheet",
+    "invalidGeometries": "Ei-validit geometriat",
+    "attributes": "Attribuutit",
+    "attribute": "Attribuutti",
+    "function": "Funktio",
+    "value": "Arvo",
+    "sensitivitySetting": "Tiedon yhdistämisen yksityisyyden suojavaatimukset"
+  },
+  "Zoom": {
+    "zoomIn": "Lähennä",
+    "zoomOut": "Loitonna"
+  },
+  "Workspace": {
+    "defaultTitle": "Uusi työtila"
+  },  
+  "WorkspaceDialog": {
+    "tooltip": "Valitse työtila",
+    "title": "Valitse työtila",
+    "searchPlaceholder": "Hae nimellä",
+    "createNew": "Luo uusi työtila",
+    "saveChanges": "Tallenna nykyinen työtila"
+  },
+  "BackgroundLayer": {
+    "defaultTitle": "Uusi taustakarttataso"
+  },
+  "BackgroundLayerDialog": {
+    "tooltip": "Valitse taustakartta"
+  },
+  "LanguageSelectorControl": {
+    "tooltip": "Valitse kieli"
+  },
+  "StyleEditor": {
+    "tooltipEditOpen": "Avaa esitystyylin muokkaus",
+    "tooltipEditClose": "Sulje esitystyylin muokkaus",
+    "mapType": "Karttatyyppi",
+    "basic": "Yksinkertainen",
+    "choropleth": "Koropleettikartta",
+    "drawFill": "Alueiden väritäyttö",
+    "fillColor": "Täyttöväri",
+    "property": "Luokitteleva ominaisuus",
+    "classification": "Luokittelutapa",
+    "naturalBreaks": "Luonnolliset välit",
+    "customBreaks": "Oma luokittelu",
+    "numberOfClasses": "Luokkien lukumäärä",
+    "distribution": "Jakauma",
+    "diverging": "Jakautuva",
+    "qualitative": "Kvalitatiivinen",
+    "quantitative": "Kvantitatiivinen",
+    "showNoValue": "Näytä kohteet ilman arvoa",
+    "noValueColor": "Väri kohteille ilman arvoa",
+    "reverse": "Käännä värit",
+    "numberOfDecimals": "Desimaalien lukumäärä",
+    "legend": "Karttaselite",
+    "noValue": "Ei arvoa"
+  },
+  "InfoPage": {
+    "body": "Tietojen yhdistämispalvelu GSDIG (Geospatial Data Integration Service) on Eurostatin rahoittamassa projektissa toteutettava verkkopalvelu, jonka avulla erilaisia tilastotietoja voidaan yhdistää mihin tahansa muuhun paikkatietoon ja myös rasteridataan. Projektin tarkoituksena on luoda metadatatuettu pilottisovellus.\n\nSe antaa mahdollisuuden käyttää esimerkiksi rakennusten ja alueiden sijaintitietoja, ja tuo mahdollisuuden aggregoida tilastotietoja (eri lähteistä) eri aluejakoihin (hallinnolliset alueet, ruudut, muut alueet) tai käyttäjän omiin tai muokkaamiin alueisiin. Tilastoaineistojen poiminnassa voidaan rajata tuloksia niin, että tietosuojan edellytykset täyttyvät.\n\nTavoitteena GSDIG-projektissa on mahdollistaa monenvälisten ja monilähteisten paikkatieto-tilastollisten ekosysteemien toteuttaminen päätöksenteon tueksi."
+  },
+  "UserGuide": {
+    "body": "Hello world"
+  }
+}
